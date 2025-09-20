@@ -8,11 +8,13 @@
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3+-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![AI](https://img.shields.io/badge/AI-Multi%20Agent%20System-FF6B6B?logo=openai&logoColor=white)](https://openai.com)
 
-> **Enterprise-grade AI-powered sales deck generator with hybrid cloud/local processing, multi-agent data extraction, and advanced security features for sensitive document handling.**
+> **AI-powered sales deck generator with hybrid cloud/local processing, multi-agent data extraction, and advanced security features for sensitive document handling.**
 
 ## 🎯 Project Overview
 
-An intelligent, full-stack web application that transforms business documents into professional, data-driven sales presentations using cutting-edge AI technologies. Built with a **security-first architecture**, the system employs both cloud-based and local AI processing to handle sensitive financial documents while maintaining enterprise-grade data protection standards.
+An intelligent, full-stack web application that transforms business documents into professional, data-driven sales presentations using cutting-edge AI technologies. Built with a **security-first architecture**, the system employs both cloud-based and local AI processing to handle sensitive financial documents while maintaining novel-grade data protection standards.
+
+> 📄 **For detailed project documentation with screenshots and usage examples, please read [Final-Report.pdf](Final-Report.pdf)**
 
 ### 🌟 Key Highlights
 
@@ -376,26 +378,3 @@ This codebase demonstrates production-ready patterns suitable for:
 - [ ] **Machine Learning Pipeline** for continuous improvement
 
 ---
-
-## 📞 Contact & Support
-
-**Developer**: [Your Name]  
-**Email**: [your.email@domain.com]  
-**LinkedIn**: [linkedin.com/in/yourprofile]  
-**Portfolio**: [yourportfolio.com]
-
-### **Project Links**
-- 🔗 **Live Demo**: [demo-url.com]
-- 📁 **GitHub Repository**: [github.com/yourusername/ai-sales-deck-generator]
-- 📖 **Documentation**: [docs-url.com]
-- 🎥 **Video Walkthrough**: [youtube.com/watch?v=demo-video]
-
----
-
-<div align="center">
-
-### ⭐ If this project helped you learn something new, please give it a star!
-
-**Built with ❤️ for the developer community**
-
-</div>
