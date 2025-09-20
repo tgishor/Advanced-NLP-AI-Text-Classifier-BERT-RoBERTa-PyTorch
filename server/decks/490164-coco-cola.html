@@ -1,0 +1,1184 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Sales Deck – Coco cola</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+        <style>
+          body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+          }
+          .container {
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 100vh;
+          }
+          .main-content {
+            flex: 3;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            overflow-y: auto;
+          }
+          .sidebar {
+            background: #ff0000;
+            color: #ffffff;
+            flex: 1;
+            min-width: 280px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+          }
+          @media (max-width: 768px) {
+            .container { flex-direction: column; }
+            .main-content, .sidebar { flex: none; }
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="main-content">
+            
+      <section style="margin-bottom: 2rem;">
+        <h2 style="color: #ff0000; border-bottom: 2px solid #ccc; padding-bottom: 0.5rem;">Brand Overview</h2>
+        <p>Coca-Cola is a global leader in the beverage industry, offering a diverse portfolio of approximately 200 brands sold in over 200 countries and territories. Founded in 1886 in Atlanta, the company has evolved from serving nine drinks a day to distributing 2.2 billion servings daily. Its extensive product lineup spans sparkling soft drinks, water, sports beverages, coffee, tea, and value-added dairy, featuring iconic brands such as Coca-Cola, Sprite, Fanta, Dasani, Costa, and fairlife. Backed by a robust bottling and distribution network, Coca-Cola excels at delivering both classic favorites and innovative new products to a vast international consumer base.
+
+Coca-Cola’s key strengths lie in its vast brand portfolio, relentless focus on product innovation, and agile response to evolving consumer preferences—including lower-sugar and functional beverages. The company maintains a leading position in the nonalcoholic ready-to-drink (NARTD) market and consistently invests in sustainability, local engagement, and operational efficiency. Despite market volatility and currency pressures, Coca-Cola continues to drive organic revenue growth and expand value share in key regions, reinforcing its reputation as one of the world’s most recognized and resilient consumer brands.</p>
+      </section>
+    
+        <section style="margin-bottom: 3rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+            <h2 style="color: #ff0000; margin: 0; font-size: 1.75rem; font-weight: 600;">Data Analytics Dashboard</h2>
+            <span style="background: #ff0000; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.875rem; font-weight: 500;">
+              5 Priority Insights
+            </span>
+          </div>
+          
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+      
+          <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); position: relative;">
+            <!-- Chart Type Badge -->
+            <div style="position: absolute; top: 1rem; right: 1rem; background: #6366F1; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; font-weight: 500;">
+              Comparison
+            </div>
+            
+            <!-- Chart Title -->
+            <h3 style="color: #ff0000; margin: 0 0 1rem 0; font-size: 1.25rem; font-weight: 600; padding-right: 6rem;">
+              Net Operating Revenues by Segment (Q1, 2024-2025)
+            </h3>
+            
+            <!-- Chart Container -->
+            <div style="height: 400px; min-height: 400px; margin-bottom: 1rem;">
+              
+                <canvas id="chart_0" style="max-height: 100%; max-width: 100%;"></canvas>
+              
+            </div>
+            
+            <!-- Chart Metadata -->
+            
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+                <span style="background: #dcfce7; color: #16a34a; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.875rem; font-weight: 500;">
+                  📊 Values in Millions USD
+                </span>
+              </div>
+            
+          </div>
+        
+          <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); position: relative;">
+            <!-- Chart Type Badge -->
+            <div style="position: absolute; top: 1rem; right: 1rem; background: #F59E0B; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; font-weight: 500;">
+              KPI Dashboard
+            </div>
+            
+            <!-- Chart Title -->
+            <h3 style="color: #ff0000; margin: 0 0 1rem 0; font-size: 1.25rem; font-weight: 600; padding-right: 6rem;">
+              Key Performance Indicators
+            </h3>
+            
+            <!-- Chart Container -->
+            <div style="height: auto; min-height: 300px; margin-bottom: 1rem;">
+              
+                <div style="
+                  display: grid; 
+                  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+                  gap: 1.5rem; 
+                  padding: 1rem;
+                  align-items: stretch;
+                ">
+                  
+                    <div style="
+                      background: linear-gradient(135deg, #fef3c7 0%, white 100%);
+                      padding: 1.5rem;
+                      border-radius: 12px;
+                      text-align: center;
+                      border: 2px solid #f59e0b;
+                      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                      min-height: auto;
+                      height: auto;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: space-between;
+                      position: relative;
+                      overflow: visible;
+                      word-wrap: break-word;
+                      box-sizing: border-box;
+                    ">
+                      <!-- Decorative icon based on metric type -->
+                      <div style="
+                        position: absolute;
+                        top: 0.75rem;
+                        right: 0.75rem;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background: #f59e0b;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: 0.65rem;
+                        font-weight: bold;
+                        z-index: 1;
+                      ">
+                        ↗
+                      </div>
+                      
+                      <!-- Main value -->
+                      <div style="
+                        font-size: 2rem;
+                        font-weight: 800;
+                        color: #ff0000;
+                        margin-bottom: 0.75rem;
+                        margin-top: 0.5rem;
+                        line-height: 1.1;
+                        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                        word-break: break-word;
+                      ">
+                        2%
+                      </div>
+                      
+                      <!-- Metric name -->
+                      <div style="
+                        font-size: 0.85rem;
+                        color: #92400e;
+                        font-weight: 600;
+                        margin-bottom: 0.75rem;
+                        line-height: 1.3;
+                        word-wrap: break-word;
+                        hyphens: auto;
+                        padding: 0 0.25rem;
+                      ">
+                        Global Unit Case Volume Growth
+                      </div>
+                      
+                      <!-- Unit display -->
+                      
+                        <div style="
+                          background: rgba(255,255,255,0.9);
+                          color: #92400e;
+                          font-size: 0.7rem;
+                          font-weight: 500;
+                          padding: 0.3rem 0.6rem;
+                          border-radius: 15px;
+                          margin: 0 auto 0.5rem auto;
+                          border: 1px solid #f59e0b40;
+                          display: inline-block;
+                          max-width: 90%;
+                          text-align: center;
+                        ">
+                          Percentage (%)
+                        </div>
+                      
+                      
+                      <!-- Trend indicator -->
+                      
+                        <div style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          font-size: 0.75rem;
+                          font-weight: 600;
+                          color: #059669;
+                          background: #d1fae5;
+                          padding: 0.4rem 0.8rem;
+                          border-radius: 15px;
+                          margin-top: auto;
+                          max-width: 100%;
+                          box-sizing: border-box;
+                        ">
+                          <span style="margin-right: 0.25rem; font-size: 0.9rem;">
+                            📈
+                          </span>
+                          Up Trend
+                        </div>
+                      
+                    </div>
+                    
+                    <div style="
+                      background: linear-gradient(135deg, #dbeafe 0%, white 100%);
+                      padding: 1.5rem;
+                      border-radius: 12px;
+                      text-align: center;
+                      border: 2px solid #3b82f6;
+                      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                      min-height: auto;
+                      height: auto;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: space-between;
+                      position: relative;
+                      overflow: visible;
+                      word-wrap: break-word;
+                      box-sizing: border-box;
+                    ">
+                      <!-- Decorative icon based on metric type -->
+                      <div style="
+                        position: absolute;
+                        top: 0.75rem;
+                        right: 0.75rem;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background: #3b82f6;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: 0.65rem;
+                        font-weight: bold;
+                        z-index: 1;
+                      ">
+                        $
+                      </div>
+                      
+                      <!-- Main value -->
+                      <div style="
+                        font-size: 2rem;
+                        font-weight: 800;
+                        color: #ff0000;
+                        margin-bottom: 0.75rem;
+                        margin-top: 0.5rem;
+                        line-height: 1.1;
+                        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                        word-break: break-word;
+                      ">
+                        11129$ million
+                      </div>
+                      
+                      <!-- Metric name -->
+                      <div style="
+                        font-size: 0.85rem;
+                        color: #1e40af;
+                        font-weight: 600;
+                        margin-bottom: 0.75rem;
+                        line-height: 1.3;
+                        word-wrap: break-word;
+                        hyphens: auto;
+                        padding: 0 0.25rem;
+                      ">
+                        Net Operating Revenues
+                      </div>
+                      
+                      <!-- Unit display -->
+                      
+                        <div style="
+                          background: rgba(255,255,255,0.9);
+                          color: #1e40af;
+                          font-size: 0.7rem;
+                          font-weight: 500;
+                          padding: 0.3rem 0.6rem;
+                          border-radius: 15px;
+                          margin: 0 auto 0.5rem auto;
+                          border: 1px solid #3b82f640;
+                          display: inline-block;
+                          max-width: 90%;
+                          text-align: center;
+                        ">
+                          Millions (M)
+                        </div>
+                      
+                      
+                      <!-- Trend indicator -->
+                      
+                        <div style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          font-size: 0.75rem;
+                          font-weight: 600;
+                          color: #dc2626;
+                          background: #fee2e2;
+                          padding: 0.4rem 0.8rem;
+                          border-radius: 15px;
+                          margin-top: auto;
+                          max-width: 100%;
+                          box-sizing: border-box;
+                        ">
+                          <span style="margin-right: 0.25rem; font-size: 0.9rem;">
+                            📉
+                          </span>
+                          Down Trend
+                        </div>
+                      
+                    </div>
+                    
+                    <div style="
+                      background: linear-gradient(135deg, #dcfce7 0%, white 100%);
+                      padding: 1.5rem;
+                      border-radius: 12px;
+                      text-align: center;
+                      border: 2px solid #10b981;
+                      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                      min-height: auto;
+                      height: auto;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: space-between;
+                      position: relative;
+                      overflow: visible;
+                      word-wrap: break-word;
+                      box-sizing: border-box;
+                    ">
+                      <!-- Decorative icon based on metric type -->
+                      <div style="
+                        position: absolute;
+                        top: 0.75rem;
+                        right: 0.75rem;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background: #10b981;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: 0.65rem;
+                        font-weight: bold;
+                        z-index: 1;
+                      ">
+                        $
+                      </div>
+                      
+                      <!-- Main value -->
+                      <div style="
+                        font-size: 2rem;
+                        font-weight: 800;
+                        color: #ff0000;
+                        margin-bottom: 0.75rem;
+                        margin-top: 0.5rem;
+                        line-height: 1.1;
+                        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                        word-break: break-word;
+                      ">
+                        -2%
+                      </div>
+                      
+                      <!-- Metric name -->
+                      <div style="
+                        font-size: 0.85rem;
+                        color: #065f46;
+                        font-weight: 600;
+                        margin-bottom: 0.75rem;
+                        line-height: 1.3;
+                        word-wrap: break-word;
+                        hyphens: auto;
+                        padding: 0 0.25rem;
+                      ">
+                        Net Revenue Growth
+                      </div>
+                      
+                      <!-- Unit display -->
+                      
+                        <div style="
+                          background: rgba(255,255,255,0.9);
+                          color: #065f46;
+                          font-size: 0.7rem;
+                          font-weight: 500;
+                          padding: 0.3rem 0.6rem;
+                          border-radius: 15px;
+                          margin: 0 auto 0.5rem auto;
+                          border: 1px solid #10b98140;
+                          display: inline-block;
+                          max-width: 90%;
+                          text-align: center;
+                        ">
+                          Percentage (%)
+                        </div>
+                      
+                      
+                      <!-- Trend indicator -->
+                      
+                        <div style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          font-size: 0.75rem;
+                          font-weight: 600;
+                          color: #dc2626;
+                          background: #fee2e2;
+                          padding: 0.4rem 0.8rem;
+                          border-radius: 15px;
+                          margin-top: auto;
+                          max-width: 100%;
+                          box-sizing: border-box;
+                        ">
+                          <span style="margin-right: 0.25rem; font-size: 0.9rem;">
+                            📉
+                          </span>
+                          Down Trend
+                        </div>
+                      
+                    </div>
+                    
+                    <div style="
+                      background: linear-gradient(135deg, #f3e8ff 0%, white 100%);
+                      padding: 1.5rem;
+                      border-radius: 12px;
+                      text-align: center;
+                      border: 2px solid #8b5cf6;
+                      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                      min-height: auto;
+                      height: auto;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: space-between;
+                      position: relative;
+                      overflow: visible;
+                      word-wrap: break-word;
+                      box-sizing: border-box;
+                    ">
+                      <!-- Decorative icon based on metric type -->
+                      <div style="
+                        position: absolute;
+                        top: 0.75rem;
+                        right: 0.75rem;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background: #8b5cf6;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: 0.65rem;
+                        font-weight: bold;
+                        z-index: 1;
+                      ">
+                        $
+                      </div>
+                      
+                      <!-- Main value -->
+                      <div style="
+                        font-size: 2rem;
+                        font-weight: 800;
+                        color: #ff0000;
+                        margin-bottom: 0.75rem;
+                        margin-top: 0.5rem;
+                        line-height: 1.1;
+                        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                        word-break: break-word;
+                      ">
+                        6%
+                      </div>
+                      
+                      <!-- Metric name -->
+                      <div style="
+                        font-size: 0.85rem;
+                        color: #5b21b6;
+                        font-weight: 600;
+                        margin-bottom: 0.75rem;
+                        line-height: 1.3;
+                        word-wrap: break-word;
+                        hyphens: auto;
+                        padding: 0 0.25rem;
+                      ">
+                        Organic Revenue Growth (Non-GAAP)
+                      </div>
+                      
+                      <!-- Unit display -->
+                      
+                        <div style="
+                          background: rgba(255,255,255,0.9);
+                          color: #5b21b6;
+                          font-size: 0.7rem;
+                          font-weight: 500;
+                          padding: 0.3rem 0.6rem;
+                          border-radius: 15px;
+                          margin: 0 auto 0.5rem auto;
+                          border: 1px solid #8b5cf640;
+                          display: inline-block;
+                          max-width: 90%;
+                          text-align: center;
+                        ">
+                          Percentage (%)
+                        </div>
+                      
+                      
+                      <!-- Trend indicator -->
+                      
+                        <div style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          font-size: 0.75rem;
+                          font-weight: 600;
+                          color: #059669;
+                          background: #d1fae5;
+                          padding: 0.4rem 0.8rem;
+                          border-radius: 15px;
+                          margin-top: auto;
+                          max-width: 100%;
+                          box-sizing: border-box;
+                        ">
+                          <span style="margin-right: 0.25rem; font-size: 0.9rem;">
+                            📈
+                          </span>
+                          Up Trend
+                        </div>
+                      
+                    </div>
+                    
+                    <div style="
+                      background: linear-gradient(135deg, #fee2e2 0%, white 100%);
+                      padding: 1.5rem;
+                      border-radius: 12px;
+                      text-align: center;
+                      border: 2px solid #ef4444;
+                      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                      min-height: auto;
+                      height: auto;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: space-between;
+                      position: relative;
+                      overflow: visible;
+                      word-wrap: break-word;
+                      box-sizing: border-box;
+                    ">
+                      <!-- Decorative icon based on metric type -->
+                      <div style="
+                        position: absolute;
+                        top: 0.75rem;
+                        right: 0.75rem;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background: #ef4444;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: 0.65rem;
+                        font-weight: bold;
+                        z-index: 1;
+                      ">
+                        ↗
+                      </div>
+                      
+                      <!-- Main value -->
+                      <div style="
+                        font-size: 2rem;
+                        font-weight: 800;
+                        color: #ff0000;
+                        margin-bottom: 0.75rem;
+                        margin-top: 0.5rem;
+                        line-height: 1.1;
+                        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                        word-break: break-word;
+                      ">
+                        71%
+                      </div>
+                      
+                      <!-- Metric name -->
+                      <div style="
+                        font-size: 0.85rem;
+                        color: #991b1b;
+                        font-weight: 600;
+                        margin-bottom: 0.75rem;
+                        line-height: 1.3;
+                        word-wrap: break-word;
+                        hyphens: auto;
+                        padding: 0 0.25rem;
+                      ">
+                        Operating Income Growth
+                      </div>
+                      
+                      <!-- Unit display -->
+                      
+                        <div style="
+                          background: rgba(255,255,255,0.9);
+                          color: #991b1b;
+                          font-size: 0.7rem;
+                          font-weight: 500;
+                          padding: 0.3rem 0.6rem;
+                          border-radius: 15px;
+                          margin: 0 auto 0.5rem auto;
+                          border: 1px solid #ef444440;
+                          display: inline-block;
+                          max-width: 90%;
+                          text-align: center;
+                        ">
+                          Percentage (%)
+                        </div>
+                      
+                      
+                      <!-- Trend indicator -->
+                      
+                        <div style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          font-size: 0.75rem;
+                          font-weight: 600;
+                          color: #059669;
+                          background: #d1fae5;
+                          padding: 0.4rem 0.8rem;
+                          border-radius: 15px;
+                          margin-top: auto;
+                          max-width: 100%;
+                          box-sizing: border-box;
+                        ">
+                          <span style="margin-right: 0.25rem; font-size: 0.9rem;">
+                            📈
+                          </span>
+                          Up Trend
+                        </div>
+                      
+                    </div>
+                    
+                    <div style="
+                      background: linear-gradient(135deg, #f0f9ff 0%, white 100%);
+                      padding: 1.5rem;
+                      border-radius: 12px;
+                      text-align: center;
+                      border: 2px solid #0ea5e9;
+                      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                      min-height: auto;
+                      height: auto;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: space-between;
+                      position: relative;
+                      overflow: visible;
+                      word-wrap: break-word;
+                      box-sizing: border-box;
+                    ">
+                      <!-- Decorative icon based on metric type -->
+                      <div style="
+                        position: absolute;
+                        top: 0.75rem;
+                        right: 0.75rem;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background: #0ea5e9;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: 0.65rem;
+                        font-weight: bold;
+                        z-index: 1;
+                      ">
+                        ↗
+                      </div>
+                      
+                      <!-- Main value -->
+                      <div style="
+                        font-size: 2rem;
+                        font-weight: 800;
+                        color: #ff0000;
+                        margin-bottom: 0.75rem;
+                        margin-top: 0.5rem;
+                        line-height: 1.1;
+                        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                        word-break: break-word;
+                      ">
+                        10%
+                      </div>
+                      
+                      <!-- Metric name -->
+                      <div style="
+                        font-size: 0.85rem;
+                        color: #0c4a6e;
+                        font-weight: 600;
+                        margin-bottom: 0.75rem;
+                        line-height: 1.3;
+                        word-wrap: break-word;
+                        hyphens: auto;
+                        padding: 0 0.25rem;
+                      ">
+                        Comparable Currency Neutral Operating Income Growth (Non-GAAP)
+                      </div>
+                      
+                      <!-- Unit display -->
+                      
+                        <div style="
+                          background: rgba(255,255,255,0.9);
+                          color: #0c4a6e;
+                          font-size: 0.7rem;
+                          font-weight: 500;
+                          padding: 0.3rem 0.6rem;
+                          border-radius: 15px;
+                          margin: 0 auto 0.5rem auto;
+                          border: 1px solid #0ea5e940;
+                          display: inline-block;
+                          max-width: 90%;
+                          text-align: center;
+                        ">
+                          Percentage (%)
+                        </div>
+                      
+                      
+                      <!-- Trend indicator -->
+                      
+                        <div style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          font-size: 0.75rem;
+                          font-weight: 600;
+                          color: #059669;
+                          background: #d1fae5;
+                          padding: 0.4rem 0.8rem;
+                          border-radius: 15px;
+                          margin-top: auto;
+                          max-width: 100%;
+                          box-sizing: border-box;
+                        ">
+                          <span style="margin-right: 0.25rem; font-size: 0.9rem;">
+                            📈
+                          </span>
+                          Up Trend
+                        </div>
+                      
+                    </div>
+                    
+                </div>
+              
+            </div>
+            
+            <!-- Chart Metadata -->
+            
+          </div>
+        
+          <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); position: relative;">
+            <!-- Chart Type Badge -->
+            <div style="position: absolute; top: 1rem; right: 1rem; background: #6366F1; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; font-weight: 500;">
+              Comparison
+            </div>
+            
+            <!-- Chart Title -->
+            <h3 style="color: #ff0000; margin: 0 0 1rem 0; font-size: 1.25rem; font-weight: 600; padding-right: 6rem;">
+              Segment Unit Case Volume Growth (Q1 2025)
+            </h3>
+            
+            <!-- Chart Container -->
+            <div style="height: 400px; min-height: 400px; margin-bottom: 1rem;">
+              
+                <canvas id="chart_2" style="max-height: 100%; max-width: 100%;"></canvas>
+              
+            </div>
+            
+            <!-- Chart Metadata -->
+            
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+                <span style="background: #dcfce7; color: #16a34a; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.875rem; font-weight: 500;">
+                  📊 Values as Percentages (%)
+                </span>
+              </div>
+            
+          </div>
+        
+          <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); position: relative;">
+            <!-- Chart Type Badge -->
+            <div style="position: absolute; top: 1rem; right: 1rem; background: #6366F1; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; font-weight: 500;">
+              Comparison
+            </div>
+            
+            <!-- Chart Title -->
+            <h3 style="color: #ff0000; margin: 0 0 1rem 0; font-size: 1.25rem; font-weight: 600; padding-right: 6rem;">
+              Segment Price/Mix Growth (Q1 2025)
+            </h3>
+            
+            <!-- Chart Container -->
+            <div style="height: 400px; min-height: 400px; margin-bottom: 1rem;">
+              
+                <canvas id="chart_3" style="max-height: 100%; max-width: 100%;"></canvas>
+              
+            </div>
+            
+            <!-- Chart Metadata -->
+            
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+                <span style="background: #dcfce7; color: #16a34a; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.875rem; font-weight: 500;">
+                  📊 Values as Percentages (%)
+                </span>
+              </div>
+            
+          </div>
+        
+          <div style="background: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05); position: relative;">
+            <!-- Chart Type Badge -->
+            <div style="position: absolute; top: 1rem; right: 1rem; background: #6366F1; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; font-weight: 500;">
+              Comparison
+            </div>
+            
+            <!-- Chart Title -->
+            <h3 style="color: #ff0000; margin: 0 0 1rem 0; font-size: 1.25rem; font-weight: 600; padding-right: 6rem;">
+              Segment Organic Revenues Growth (Q1 2025, Non-GAAP)
+            </h3>
+            
+            <!-- Chart Container -->
+            <div style="height: 400px; min-height: 400px; margin-bottom: 1rem;">
+              
+                <canvas id="chart_4" style="max-height: 100%; max-width: 100%;"></canvas>
+              
+            </div>
+            
+            <!-- Chart Metadata -->
+            
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+                <span style="background: #dcfce7; color: #16a34a; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.875rem; font-weight: 500;">
+                  📊 Values as Percentages (%)
+                </span>
+              </div>
+            
+          </div>
+        
+          </div>
+          
+
+          
+          <div style="margin-top: 2rem; padding: 1rem; background: linear-gradient(to right, #f0f9ff, #e0f2fe); border-radius: 8px; border-left: 4px solid #ff0000;">
+            <p style="margin: 0; font-size: 0.875rem; color: #0369a1;">
+              <strong>Interactive Analytics:</strong> These charts are powered by Chart.js and provide interactive tooltips and data exploration. 
+              For the complete analytics experience with advanced filtering and drill-down capabilities, visit the React dashboard.
+            </p>
+          </div>
+        </section>
+      
+        <section style="margin-bottom: 2rem;">
+          <h2 style="color: #ff0000; border-bottom: 2px solid #ccc; padding-bottom: 0.5rem;">Brand Documents</h2>
+          <ul style="list-style: disc; padding-left: 1.5rem;">
+      
+            <li>
+              <a href="../uploads/1750207760033-cchbc-iar-2024.pdf" style="color: #ff0000; text-decoration: none;" download>
+                cchbc-iar-2024.pdf
+              </a>
+            </li>
+        
+            <li>
+              <a href="../uploads/1749814354420-Coca-Cola_2025_Q1_Earnings_Release_Full_Release_4.29.25_2.pdf" style="color: #ff0000; text-decoration: none;" download>
+                Coca-Cola 2025 Q1 Earnings Release_Full Release_4.29.25_2.pdf
+              </a>
+            </li>
+        
+          </ul>
+        </section>
+      
+        <section style="margin-bottom: 2rem;">
+          <h2 style="color: #ff0000; border-bottom: 2px solid #ccc; padding-bottom: 0.5rem;">
+            🔒 Processed Sensitive Information
+          </h2>
+          <div style="background-color: #f0f8ff; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #ff0000; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <div style="margin-bottom: 1rem; padding: 0.75rem; background-color: #e3f2fd; border-radius: 6px; border: 1px solid #bbdefb;">
+              <strong style="color: #1565c0;">🛡️ Security Notice:</strong> 
+              <span style="color: #1976d2; font-size: 0.9rem;">
+                1 sensitive document(s) processed locally using Llama-3.1-8B models. 
+                No confidential data was sent to external APIs.
+              </span>
+            </div>
+      
+            <div style="margin-bottom: 1.5rem; padding: 1rem; background-color: white; border-radius: 6px; border: 1px solid #e3f2fd;">
+              <div style="display: flex; align-items: center; margin-bottom: 0.75rem;">
+                <div style="width: 8px; height: 8px; background-color: #4caf50; border-radius: 50%; margin-right: 0.5rem;"></div>
+                <strong style="color: #ff0000; font-size: 1rem;">cchbc-iar-2024.pdf</strong>
+              </div>
+              <div style="margin-bottom: 0.5rem; padding: 0.5rem; background-color: #f8f9fa; border-radius: 4px; border-left: 3px solid #28a745;">
+                <small style="color: #666; font-style: italic;">
+                  ✅ Locally processed • 🔒 Zero external API calls • 🛡️ Privacy compliant
+                </small>
+              </div>
+              <div style="color: #374151; line-height: 1.6; padding: 0.5rem 0;">
+                Key Business Narrative: Future ready 
+innovating, 
+growing,  
+refreshing......
+              </div>
+            </div>
+        
+          </div>
+        </section>
+      
+        <section style="margin-bottom: 2rem;">
+          <h2 style="color: #ff0000; border-bottom: 2px solid #ccc; padding-bottom: 0.5rem;">
+            🌐 AI Processing Summary
+          </h2>
+          <div style="background-color: #f8fff0; padding: 1rem; border-radius: 6px; border-left: 4px solid #ff0000;">
+      
+            <p style="margin: 0 0 1rem 0; font-weight: bold;">
+              🌐 1 general document(s) processed via OpenAI API
+              <br>🔒 1 sensitive document(s) processed locally (see dedicated section above)
+            </p>
+            <small style="color: #666;">
+              Hybrid processing: OpenAI for general content, local AI for sensitive data
+            </small>
+        
+          </div>
+        </section>
+      
+        <section style="margin-bottom: 3rem;">
+          <h2 style="color: #ff0000; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; font-size: 1.75rem; font-weight: 600;">Competitive Intelligence Analysis</h2>
+      
+          <div style="background: linear-gradient(135deg, #ff000015, #ff000008); padding: 2rem; border-radius: 12px; margin: 1.5rem 0; border-left: 4px solid #ff0000; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <h3 style="color: #ff0000; margin-top: 0; font-size: 1.3rem; font-weight: 600;">Coco cola Market Position</h3>
+            <p style="margin-bottom: 1.5rem; color: #374151; line-height: 1.6;"><strong>Strategic Position:</strong> Coca-Cola is the global leader in nonalcoholic ready-to-drink beverages, with unmatched brand reach and portfolio breadth, consistently gaining or holding value share in major regions and categories.</p>
+        
+            <div style="margin-bottom: 1.5rem;">
+              <h4 style="color: #ff0000; font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem;">Competitive Advantages</h4>
+              <ul style="margin: 0; padding-left: 1.5rem; color: #374151;">
+                <li style="margin-bottom: 0.5rem;">Leading global market share in NARTD beverages</li><li style="margin-bottom: 0.5rem;">Broad, diversified beverage portfolio (30 billion-dollar brands)</li><li style="margin-bottom: 0.5rem;">Global distribution and bottling network in over 200 countries</li><li style="margin-bottom: 0.5rem;">Strong brand equity and marketing capability</li><li style="margin-bottom: 0.5rem;">Continuous innovation (e.g., fairlife, Simply Pop, prebiotic sodas)</li><li style="margin-bottom: 0.5rem;">Ability to localize offerings and marketing (e.g., India Maha Kumbh Mela activation)</li>
+              </ul>
+            </div>
+          
+            <div style="margin-bottom: 1rem;">
+              <h4 style="color: #ff0000; font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem;">Key Differentiators</h4>
+              <ul style="margin: 0; padding-left: 1.5rem; color: #374151;">
+                <li style="margin-bottom: 0.5rem;">Iconic global brands (Coca-Cola, Sprite, Fanta, Minute Maid, fairlife)</li><li style="margin-bottom: 0.5rem;">Agility in local market activation and adaptation</li><li style="margin-bottom: 0.5rem;">Investment in health-oriented and value-added beverage segments</li><li style="margin-bottom: 0.5rem;">Strong system of bottling partners enabling deep market penetration</li>
+              </ul>
+            </div>
+          </div>
+          <div style="margin-bottom: 2rem;">
+            <h3 style="color: #ff0000; font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">Competitive Landscape</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+        
+            <div style="background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+              <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                <h4 style="margin: 0; color: #ff0000; font-size: 1.1rem; font-weight: 600;">PepsiCo</h4>
+                <span style="background: #dc3545; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; font-weight: 500;">
+                  DIRECT
+                </span>
+              </div>
+              <p style="margin: 0 0 1rem 0; font-size: 0.9rem; color: #6b7280; line-height: 1.5;">PepsiCo is Coca-Cola's primary direct competitor, often the #2 player in global soft drinks and NARTD beverages. Competes head-to-head in most geographies and categories including sparkling, juice, water, sports, and tea.</p>
+          
+              <div style="margin-bottom: 1rem;">
+                <h5 style="font-size: 0.85rem; color: #059669; font-weight: 600; margin-bottom: 0.5rem;">Strengths</h5>
+                <ul style="font-size: 0.8rem; margin: 0; padding-left: 1rem; color: #374151;">
+                  <li style="margin-bottom: 0.25rem;">Strong global presence in nonalcoholic ready-to-drink (NARTD) beverages</li><li style="margin-bottom: 0.25rem;">Well-diversified product portfolio including soft drinks, snacks, and value-added beverages</li><li style="margin-bottom: 0.25rem;">Significant brand equity and marketing capability</li>
+                </ul>
+              </div>
+            
+              <div style="margin-bottom: 0.5rem;">
+                <h5 style="font-size: 0.85rem; color: #dc2626; font-weight: 600; margin-bottom: 0.5rem;">Challenges</h5>
+                <ul style="font-size: 0.8rem; margin: 0; padding-left: 1rem; color: #374151;">
+                  <li style="margin-bottom: 0.25rem;">Similar exposure to currency headwinds and global macroeconomic volatility</li><li style="margin-bottom: 0.25rem;">Intense competition with Coca-Cola in key global markets</li>
+                </ul>
+              </div>
+            </div>
+            <div style="background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+              <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                <h4 style="margin: 0; color: #ff0000; font-size: 1.1rem; font-weight: 600;">Nestlé</h4>
+                <span style="background: #6f42c1; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; font-weight: 500;">
+                  INDIRECT
+                </span>
+              </div>
+              <p style="margin: 0 0 1rem 0; font-size: 0.9rem; color: #6b7280; line-height: 1.5;">Major competitor in water, coffee (Nescafé), and value-added dairy; more indirect in carbonated soft drinks.</p>
+          
+              <div style="margin-bottom: 1rem;">
+                <h5 style="font-size: 0.85rem; color: #059669; font-weight: 600; margin-bottom: 0.5rem;">Strengths</h5>
+                <ul style="font-size: 0.8rem; margin: 0; padding-left: 1rem; color: #374151;">
+                  <li style="margin-bottom: 0.25rem;">Global scale in bottled water, coffee, and dairy-based beverages</li><li style="margin-bottom: 0.25rem;">Strong distribution in emerging markets</li><li style="margin-bottom: 0.25rem;">Health and wellness focus</li>
+                </ul>
+              </div>
+            
+              <div style="margin-bottom: 0.5rem;">
+                <h5 style="font-size: 0.85rem; color: #dc2626; font-weight: 600; margin-bottom: 0.5rem;">Challenges</h5>
+                <ul style="font-size: 0.8rem; margin: 0; padding-left: 1rem; color: #374151;">
+                  <li style="margin-bottom: 0.25rem;">Less focus on sparkling soft drinks</li><li style="margin-bottom: 0.25rem;">Portfolio not as broad in carbonated beverages</li>
+                </ul>
+              </div>
+            </div>
+            <div style="background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+              <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                <h4 style="margin: 0; color: #ff0000; font-size: 1.1rem; font-weight: 600;">Keurig Dr Pepper</h4>
+                <span style="background: #dc3545; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; font-weight: 500;">
+                  DIRECT
+                </span>
+              </div>
+              <p style="margin: 0 0 1rem 0; font-size: 0.9rem; color: #6b7280; line-height: 1.5;">Third player in North American soft drinks and NARTD beverages; less global than Coca-Cola and PepsiCo.</p>
+          
+              <div style="margin-bottom: 1rem;">
+                <h5 style="font-size: 0.85rem; color: #059669; font-weight: 600; margin-bottom: 0.5rem;">Strengths</h5>
+                <ul style="font-size: 0.8rem; margin: 0; padding-left: 1rem; color: #374151;">
+                  <li style="margin-bottom: 0.25rem;">Strong position in North America for soft drinks and ready-to-drink coffee</li><li style="margin-bottom: 0.25rem;">Portfolio of popular regional brands</li>
+                </ul>
+              </div>
+            
+              <div style="margin-bottom: 0.5rem;">
+                <h5 style="font-size: 0.85rem; color: #dc2626; font-weight: 600; margin-bottom: 0.5rem;">Challenges</h5>
+                <ul style="font-size: 0.8rem; margin: 0; padding-left: 1rem; color: #374151;">
+                  <li style="margin-bottom: 0.25rem;">Limited international reach compared to Coca-Cola</li><li style="margin-bottom: 0.25rem;">Less presence in emerging markets</li>
+                </ul>
+              </div>
+            </div>
+            <div style="background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+              <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                <h4 style="margin: 0; color: #ff0000; font-size: 1.1rem; font-weight: 600;">Danone</h4>
+                <span style="background: #6f42c1; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; font-weight: 500;">
+                  INDIRECT
+                </span>
+              </div>
+              <p style="margin: 0 0 1rem 0; font-size: 0.9rem; color: #6b7280; line-height: 1.5;">Strong in dairy, functional, and plant-based drink segments; indirect competitor in the broader beverage market.</p>
+          
+              <div style="margin-bottom: 1rem;">
+                <h5 style="font-size: 0.85rem; color: #059669; font-weight: 600; margin-bottom: 0.5rem;">Strengths</h5>
+                <ul style="font-size: 0.8rem; margin: 0; padding-left: 1rem; color: #374151;">
+                  <li style="margin-bottom: 0.25rem;">Strong in value-added dairy and plant-based beverages</li><li style="margin-bottom: 0.25rem;">Established health and wellness credentials</li>
+                </ul>
+              </div>
+            
+              <div style="margin-bottom: 0.5rem;">
+                <h5 style="font-size: 0.85rem; color: #dc2626; font-weight: 600; margin-bottom: 0.5rem;">Challenges</h5>
+                <ul style="font-size: 0.8rem; margin: 0; padding-left: 1rem; color: #374151;">
+                  <li style="margin-bottom: 0.25rem;">Limited presence in carbonated beverages</li><li style="margin-bottom: 0.25rem;">Smaller scale in global beverage compared to Coca-Cola</li>
+                </ul>
+              </div>
+            </div>
+            <div style="background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+              <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                <h4 style="margin: 0; color: #ff0000; font-size: 1.1rem; font-weight: 600;">Regional/local brands (e.g., Thums Up in India, local teas, juices)</h4>
+                <span style="background: #6f42c1; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; font-weight: 500;">
+                  INDIRECT
+                </span>
+              </div>
+              <p style="margin: 0 0 1rem 0; font-size: 0.9rem; color: #6b7280; line-height: 1.5;">Strong in specific geographies or categories; pose threat in emerging markets.</p>
+          
+              <div style="margin-bottom: 1rem;">
+                <h5 style="font-size: 0.85rem; color: #059669; font-weight: 600; margin-bottom: 0.5rem;">Strengths</h5>
+                <ul style="font-size: 0.8rem; margin: 0; padding-left: 1rem; color: #374151;">
+                  <li style="margin-bottom: 0.25rem;">Strong local brand loyalty</li><li style="margin-bottom: 0.25rem;">Cultural relevance and tailored products</li>
+                </ul>
+              </div>
+            
+              <div style="margin-bottom: 0.5rem;">
+                <h5 style="font-size: 0.85rem; color: #dc2626; font-weight: 600; margin-bottom: 0.5rem;">Challenges</h5>
+                <ul style="font-size: 0.8rem; margin: 0; padding-left: 1rem; color: #374151;">
+                  <li style="margin-bottom: 0.25rem;">Limited geographic reach</li><li style="margin-bottom: 0.25rem;">Lower marketing and innovation scale</li>
+                </ul>
+              </div>
+            </div></div></div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+        
+            <div style="background: linear-gradient(135deg, #f8fafc, #f1f5f9); padding: 1.5rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+              <h4 style="color: #ff0000; margin: 0 0 1rem 0; font-size: 1.1rem; font-weight: 600;">Market Landscape</h4>
+              <div style="margin-bottom: 0.75rem;"><span style="font-weight: 600; color: #374151;">Industry Size:</span> <span style="color: #6b7280;">Not explicitly mentioned, but implied as vast/global (over 200 countries, billions of servings)</span></div>
+              <div style="margin-bottom: 0.75rem;"><span style="font-weight: 600; color: #374151;">Growth Rate:</span> <span style="color: #6b7280;">Organic revenue growth guided at 5-6% for 2025; unit case volume up 2% in Q1 2025; ready-to-drink tea and value-added dairy segments showing high growth</span></div>
+              <div style="margin-bottom: 0.75rem;"><span style="font-weight: 600; color: #374151;">Competition Level:</span> <span style="color: #6b7280; text-transform: capitalize;">High</span></div>
+              
+                <div style="margin-top: 1rem;">
+                  <h5 style="font-weight: 600; color: #374151; margin-bottom: 0.5rem; font-size: 0.9rem;">Key Market Trends</h5>
+                  <ul style="font-size: 0.85rem; margin: 0; padding-left: 1rem; color: #6b7280;">
+                    <li style="margin-bottom: 0.25rem;">Shift toward health, nutrition, and low/no-sugar alternatives</li><li style="margin-bottom: 0.25rem;">Premiumization and functional beverage innovation</li><li style="margin-bottom: 0.25rem;">Rising importance of local brands and regional customization</li>
+                  </ul>
+                </div>
+              
+            </div>
+          
+            <div style="background: linear-gradient(135deg, #eff6ff, #dbeafe); padding: 1.5rem; border-radius: 8px; border: 1px solid #bfdbfe;">
+              <h4 style="color: #ff0000; margin: 0 0 1rem 0; font-size: 1.1rem; font-weight: 600;">Current Focus & Exploration</h4>
+              <ul style="font-size: 0.9rem; margin: 0; padding-left: 0; list-style: none; color: #374151;">
+                
+                  <li style="margin-bottom: 0.75rem; display: flex; align-items: start;">
+                    <span style="background: #ff0000; color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 600; margin-right: 0.75rem; flex-shrink: 0;">1</span>
+                    <span style="line-height: 1.5;">Accelerate innovation in health-oriented and functional beverages to address consumer trends and offset any category declines in traditional sodas.</span>
+                  </li>
+                
+                  <li style="margin-bottom: 0.75rem; display: flex; align-items: start;">
+                    <span style="background: #ff0000; color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 600; margin-right: 0.75rem; flex-shrink: 0;">2</span>
+                    <span style="line-height: 1.5;">Increase investment in emerging markets with tailored local strategies and partnerships to capture high-growth opportunities and defend against regional competitors.</span>
+                  </li>
+                
+                  <li style="margin-bottom: 0.75rem; display: flex; align-items: start;">
+                    <span style="background: #ff0000; color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 600; margin-right: 0.75rem; flex-shrink: 0;">3</span>
+                    <span style="line-height: 1.5;">Continue to drive operational efficiency and manage currency risk to mitigate financial volatility and maintain margin leadership.</span>
+                  </li>
+                
+              </ul>
+            </div>
+          </div></section>
+        <section style="margin-bottom: 2rem;">
+          <h2 style="color: #ff0000; border-bottom: 2px solid #ccc; padding-bottom: 0.5rem;">Innovation and Market Leadership</h2>
+          <p>The Coca-Cola Company’s dedication to ongoing innovation and market leadership remains a cornerstone of its sustained success. With a portfolio of over 30 billion-dollar brands, the company consistently pioneers new product offerings that cater to evolving consumer preferences, such as expanding its health-oriented beverage line. Strategic marketing activations, including notable campaigns during India’s Maha Kumbh Mela and China’s Lunar New Year, demonstrate Coca-Cola’s ability to resonate with diverse audiences and capture incremental value share. By investing in digital engagement and leveraging local production capacities, Coca-Cola not only reinforces brand relevance in established markets but also drives robust growth in emerging regions. This forward-thinking approach positions the company as a global leader in the nonalcoholic ready-to-drink segment, continuously adapting to capture new opportunities and maintain its competitive edge.</p>
+        </section>
+      
+        <section style="margin-bottom: 2rem;">
+          <h2 style="color: #ff0000; border-bottom: 2px solid #ccc; padding-bottom: 0.5rem;">Sustainability and Community Impact</h2>
+          <p>Coca-Cola’s commitment to sustainability and community engagement significantly enhances its global reputation and operational resilience. The company prioritizes responsible production practices and invests in initiatives that support local communities, building consumer trust and fostering long-term brand loyalty. Recent efforts include innovations in eco-friendly packaging, expansion of local sourcing, and targeted community programs that address health and wellbeing. These initiatives not only mitigate regulatory and environmental risks but also align with the growing demand for socially responsible business practices. By integrating sustainability into its core strategy and forging meaningful community partnerships, Coca-Cola demonstrates a holistic approach to growth—one that balances financial performance with positive societal impact, ensuring continued relevance and acceptance in diverse markets worldwide.</p>
+        </section>
+      
+          </div>
+          <div class="sidebar">
+            <div style="font-size: 1rem; margin-bottom: 1rem; color: #ffcccc;">
+              Powered by Decker.ai
+            </div>
+            <div style="
+              background-color: #ffffff;
+              padding: 40px;
+              border-radius: 8px;
+              margin-bottom: 1rem;
+            ">
+              <img
+                src="../uploads/1748933124925-Coca-Cola_logo.svg.png"
+                alt="Logo for Coco cola"
+                style="max-width: 100%; height: auto;"
+              />
+            </div>
+            <h2 style="margin: 0.5rem 0; font-size: 1.5rem; color: #ffffff;">
+              Coco cola
+            </h2>
+            <p style="font-size: 1rem; line-height: 1.4; color: #ffcccc;">
+              On May 8, 1886, Dr. John Pemberton brought his perfected syrup to Jacobs' Pharmacy in downtown Atlanta, where the first glass of Coca‑Cola was poured. In its first year, about nine Coca-Cola drinks were served per day. Today, The Coca-Cola Company, with approximately 200 brands sold across more than 200 countries and territories, serves 2.2 billion drinks per day. We own 30 billion-dollar brands across several beverage categories worldwide. Our global portfolio of beverage brands includes the following: Sparkling Soft Drinks: Coca-Cola, Diet Coke/Coca-Cola Light, Coca-Cola Zero Sugar, Fanta, Fresca, Schweppes (owned by The Coca-Cola Company in certain countries other than the United States), Sprite and Thums Up Water, Sports, Coffee and Tea: Aquarius, Ayataka, BODYARMOR, Ciel, Costa, Crystal, Dasani, Fuze Tea, Georgia, glacéau smartwater, glacéau vitaminwater, Gold Peak, I LOHAS, Powerade and Topo Chico Juice, Value-Added Dairy and Plant-Based: Core Power, Del Valle, fairlife, Maaza, Minute Maid, Minute Maid Pulpy and Simply Our strong and stable bottling and distribution system helps us capture growth by manufacturing, distributing and selling existing, enhanced and new innovative products to consumers throughout the world.
+            </p>
+          </div>
+        </div>
+        
+        <script>
+          // Chart.js initialization
+          document.addEventListener('DOMContentLoaded', function() {
+            const chartData = [{"id":"chart_0","type":"bar","data":{"labels":["Q1 2024 - EMEA","Q1 2025 - EMEA","Q1 2024 - Latin America","Q1 2025 - Latin America","Q1 2024 - North America","Q1 2025 - North America","Q1 2024 - Asia Pacific","Q1 2025 - Asia Pacific","Q1 2024 - Bottling Investments","Q1 2025 - Bottling Investments"],"datasets":[{"label":"Net Operating Revenues by Segment (Q1, 2024-2025)","data":[2632,2657,1530,1477,4226,4361,1481,1421,1817,1463],"borderColor":"#ff0000","backgroundColor":"#ff0000","tension":0.1,"fill":false}]},"options":{"responsive":true,"maintainAspectRatio":false,"plugins":{"title":{"display":false},"legend":{"display":true,"position":"bottom","labels":{"padding":20,"usePointStyle":true}}},"scales":{"y":{"beginAtZero":true,"grid":{"color":"#e5e7eb"}},"x":{"grid":{"color":"#e5e7eb"}}},"elements":{"point":{"radius":4,"hoverRadius":6},"line":{"tension":0.1,"fill":false}}}},{"id":"chart_1","type":"metrics","data":[{"name":"Global Unit Case Volume Growth","value":2,"unit":"%","trend":"up","context":"Q1 2025 vs. Q1 2024","category":"operational"},{"name":"Net Operating Revenues","value":11129,"unit":"$ million","trend":"down","context":"Q1 2025","category":"financial"},{"name":"Net Revenue Growth","value":-2,"unit":"%","trend":"down","context":"Q1 2025 vs. Q1 2024","category":"financial"},{"name":"Organic Revenue Growth (Non-GAAP)","value":6,"unit":"%","trend":"up","context":"Q1 2025 vs. Q1 2024","category":"financial"},{"name":"Operating Income Growth","value":71,"unit":"%","trend":"up","context":"Q1 2025 vs. Q1 2024","category":"financial"},{"name":"Comparable Currency Neutral Operating Income Growth (Non-GAAP)","value":10,"unit":"%","trend":"up","context":"Q1 2025 vs. Q1 2024","category":"financial"}],"options":{"responsive":true,"maintainAspectRatio":false,"plugins":{"title":{"display":false},"legend":{"display":false,"position":"bottom","labels":{"padding":20,"usePointStyle":true}}},"scales":{"y":{"beginAtZero":true,"grid":{"color":"#e5e7eb"}},"x":{"grid":{"color":"#e5e7eb"}}},"elements":{"point":{"radius":4,"hoverRadius":6},"line":{"tension":0.1,"fill":false}}}},{"id":"chart_2","type":"bar","data":{"labels":["Q1 2025 - Consolidated","Q1 2025 - EMEA","Q1 2025 - Latin America","Q1 2025 - North America","Q1 2025 - Asia Pacific","Q1 2025 - Bottling Investments"],"datasets":[{"label":"Segment Unit Case Volume Growth (Q1 2025)","data":[2,3,0,-3,6,-17],"borderColor":"#ff0000","backgroundColor":"#ff0000","tension":0.1,"fill":false}]},"options":{"responsive":true,"maintainAspectRatio":false,"plugins":{"title":{"display":false},"legend":{"display":true,"position":"bottom","labels":{"padding":20,"usePointStyle":true}}},"scales":{"y":{"beginAtZero":true,"grid":{"color":"#e5e7eb"}},"x":{"grid":{"color":"#e5e7eb"}}},"elements":{"point":{"radius":4,"hoverRadius":6},"line":{"tension":0.1,"fill":false}}}},{"id":"chart_3","type":"bar","data":{"labels":["Q1 2025 - Consolidated","Q1 2025 - EMEA","Q1 2025 - Latin America","Q1 2025 - North America","Q1 2025 - Asia Pacific","Q1 2025 - Bottling Investments"],"datasets":[{"label":"Segment Price/Mix Growth (Q1 2025)","data":[5,6,16,8,-1,3],"borderColor":"#ff0000","backgroundColor":"#ff0000","tension":0.1,"fill":false}]},"options":{"responsive":true,"maintainAspectRatio":false,"plugins":{"title":{"display":false},"legend":{"display":true,"position":"bottom","labels":{"padding":20,"usePointStyle":true}}},"scales":{"y":{"beginAtZero":true,"grid":{"color":"#e5e7eb"}},"x":{"grid":{"color":"#e5e7eb"}}},"elements":{"point":{"radius":4,"hoverRadius":6},"line":{"tension":0.1,"fill":false}}}},{"id":"chart_4","type":"bar","data":{"labels":["Q1 2025 - Consolidated","Q1 2025 - EMEA","Q1 2025 - Latin America","Q1 2025 - North America","Q1 2025 - Asia Pacific","Q1 2025 - Bottling Investments"],"datasets":[{"label":"Segment Organic Revenues Growth (Q1 2025, Non-GAAP)","data":[6,7,13,3,7,2],"borderColor":"#ff0000","backgroundColor":"#ff0000","tension":0.1,"fill":false}]},"options":{"responsive":true,"maintainAspectRatio":false,"plugins":{"title":{"display":false},"legend":{"display":true,"position":"bottom","labels":{"padding":20,"usePointStyle":true}}},"scales":{"y":{"beginAtZero":true,"grid":{"color":"#e5e7eb"}},"x":{"grid":{"color":"#e5e7eb"}}},"elements":{"point":{"radius":4,"hoverRadius":6},"line":{"tension":0.1,"fill":false}}}}];
+            
+            chartData.forEach(chartConfig => {
+              const ctx = document.getElementById(chartConfig.id);
+              if (!ctx) return;
+              
+              try {
+                // Handle different chart types
+                if (chartConfig.type === 'metrics') {
+                  // Metrics are handled by HTML, skip Chart.js rendering
+                  return;
+                }
+                
+                new Chart(ctx, {
+                  type: chartConfig.type,
+                  data: chartConfig.data,
+                  options: chartConfig.options
+                });
+              } catch (error) {
+                console.error('Error rendering chart:', chartConfig.id, error);
+                ctx.parentElement.innerHTML = '<div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #9ca3af;">Chart rendering failed</div>';
+              }
+            });
+          });
+          
+
+        </script>
+      </body>
+      </html>
+    
